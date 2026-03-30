@@ -1,3 +1,24 @@
+Machine learning project based on Census 2022 data, analysing housing pressure and socio-economic inequality across Ireland using K-Means clustering.
+
+Focuses on uncovering hidden territorial patterns beyond traditional urban–rural classifications.
+
+**Fernando Bermudo**  
+Software Developer | Java, Kotlin & Python  
+
+📫 contact@granades.dev  
+🌐 https://granades.dev  
+💻 https://github.com/Granades  
+
+## 🛠️ Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib / Seaborn
+- Jupyter Notebook
+
+
 # 🏠 Housing and Social Inequality in Ireland  
 ### Territorial Patterns using K-Means Clustering
 
@@ -117,23 +138,80 @@ The model identified **4 distinct socio-economic clusters**:
 
 ## 📊 Visualisations
 
-This project includes:
+## 📊 Visualisations
 
-- Elbow Method graph (cluster selection)
-- Cluster profile heatmaps
-- Overcrowding distribution plots
-- Urban vs cluster comparison charts
+### 🔹 1. Exploratory Data Analysis (EDA)
+
+#### Distribution of key variables
+![EDA Distribution](images/1_eda_distribution.png)
+
+Initial exploration of the dataset to understand variable distributions and detect skewness or anomalies.
 
 ---
 
-## 🛠️ Technologies Used
+#### Overcrowding index by original classification
+![EDA Overcrowding](images/2_eda_overcrowding_by_original.png)
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib / Seaborn
-- Jupyter Notebook
+Shows how overcrowding varies across traditional classifications (e.g. urban vs rural).
+
+---
+
+### 🔹 2. Choosing the Number of Clusters
+
+#### Elbow Method
+![Elbow Method](images/3_elbow_method.png)
+
+Used to determine the optimal number of clusters.  
+The curve suggests **K = 4** as a good balance between simplicity and explanatory power.
+
+---
+
+### 🔹 3. K-Means Clustering Results
+
+#### Cluster formation
+![K-Means Clusters](images/4_kmeans_clusters.png)
+
+Visual representation of how data points are grouped using K-Means.
+
+---
+
+#### Cluster distribution
+![Cluster Distribution](images/5_cluster_distribution.png)
+
+Shows how many areas belong to each cluster.
+
+---
+
+### 🔹 4. Socio-Economic Interpretation
+
+#### Overcrowding by cluster
+![Overcrowding by Cluster](images/6_overcrowding_by_cluster.png)
+
+Highlights differences in housing pressure across clusters.
+
+---
+
+#### Original classification vs clusters
+![Original vs Clusters](images/7_original_vs_clusters.png)
+
+Comparison between traditional classifications and machine learning clusters.
+
+---
+
+### 🔹 5. Feature Relationships
+
+#### Feature scatter plot
+![Feature Scatter](images/8_feature_scatter.png)
+
+Explores relationships between key variables used in clustering.
+
+---
+
+#### Cluster heatmap
+![Cluster Heatmap](images/9_heatmap_clusters.png)
+
+Summarises the profile of each cluster across all variables.
+
 
 ---
 
@@ -143,9 +221,17 @@ This project includes:
 - Sensitive to initialisation  
 - Results are **descriptive, not predictive**
 
-**Fernando Bermudo**  
-Software Developer | Java, Kotlin & Python  
 
-📫 contact@granades.dev  
-🌐 https://granades.dev  
-💻 https://github.com/Granades  
+## ▶️ How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Granades/housing-inequality-ireland-ml.git
+cd housing-inequality-ireland-ml
+### 2. Install dependencies
+```bash
+pip install pandas numpy scikit-learn matplotlib seaborn jupyter
+```bash
+### 3. Run the notebook
+jupyter notebook
