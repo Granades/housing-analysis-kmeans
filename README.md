@@ -83,7 +83,7 @@ cd housing-inequality-ireland-ml
 
 ### 1. Clone the repository
 
-```bash
+
 git clone https://github.com/Granades/housing-inequality-ireland-ml.git
 cd housing-inequality-ireland-ml
 
