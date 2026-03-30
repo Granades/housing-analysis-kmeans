@@ -1,28 +1,44 @@
 # 🏠 Housing and Social Inequality in Ireland  
 ### K-Means Clustering on Census 2022 Data
 
-## 📌 Project Summary
+## 📌 Overview
 
 Machine learning project analysing housing pressure and socio-economic inequality across Ireland using Census 2022 data (~19,000 small areas).
 
-The analysis is based on 11 selected socio-economic variables, cleaned and standardised from a larger dataset, removing missing and inconsistent entries.
-
-K-Means clustering (K = 4) was applied to uncover hidden territorial patterns beyond traditional urban–rural classifications.
----
-
-## 🛠️ Technologies
-
-Python · Pandas · NumPy · Scikit-learn · Matplotlib · Seaborn · Jupyter
+The project applies **K-Means clustering (K = 4)** to identify hidden territorial patterns beyond traditional urban–rural classifications.
 
 ---
 
-## 📊 Key Results
+## 🧠 What this project does
 
-- Identified **4 socio-economic clusters**
-- Revealed inequalities not captured by official classifications
-- Highlighted housing pressure beyond urban areas
+The main analysis is implemented in:
+
+👉 `housing_clustering_analysis.ipynb`
+
+Inside the notebook, you will find:
+
+- Data loading and cleaning  
+- Feature selection (11 variables)  
+- Data standardisation (Z-score)  
+- K-Means clustering  
+- Elbow method for model selection  
+- Visualisation and interpretation of clusters  
 
 ---
+
+## ⚙️ Machine Learning Approach
+
+- **Type:** Unsupervised Learning  
+- **Algorithm:** K-Means Clustering  
+- **Goal:** Discover hidden socio-economic structures  
+
+### Pipeline:
+
+1. Data preprocessing  
+2. Feature scaling  
+3. Model selection (Elbow Method)  
+4. Clustering (K = 4)  
+5. Interpretation of clusters  
 
 ## 📊 Visualisations
 
