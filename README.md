@@ -3,10 +3,11 @@
 
 ## 📌 Project Summary
 
-Machine learning project analysing housing pressure and socio-economic inequality across Ireland using K-Means clustering.
+Machine learning project analysing housing pressure and socio-economic inequality across Ireland using Census 2022 data (~19,000 small areas).
 
-Focuses on uncovering hidden territorial patterns beyond traditional urban–rural classifications.
+The analysis is based on 11 selected socio-economic variables, cleaned and standardised from a larger dataset, removing missing and inconsistent entries.
 
+K-Means clustering (K = 4) was applied to uncover hidden territorial patterns beyond traditional urban–rural classifications.
 ---
 
 ## 🛠️ Technologies
