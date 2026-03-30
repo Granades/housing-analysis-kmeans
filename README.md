@@ -68,7 +68,7 @@ Python · Pandas · NumPy · Scikit-learn · Matplotlib · Seaborn · Jupyter
 ![Feature Scatter](images/8_feature_scatter.png)
 
 #### Cluster heatmap
-![Cluster Heatmap](images/9_heatmap_clusters.png)
+![Cluster Heatmap](images/9_overcrowding_original.png)
 
 ---
 
